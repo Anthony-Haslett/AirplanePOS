@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeatNum));
             this.enter = new System.Windows.Forms.Button();
             this.seatNumText = new System.Windows.Forms.TextBox();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // enter
@@ -56,6 +57,18 @@
             this.seatNumText.Size = new System.Drawing.Size(368, 43);
             this.seatNumText.TabIndex = 2;
             // 
+            // back
+            // 
+            this.back.BackColor = System.Drawing.Color.Transparent;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.back.ForeColor = System.Drawing.Color.Transparent;
+            this.back.Location = new System.Drawing.Point(24, 676);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(112, 40);
+            this.back.TabIndex = 4;
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // SeatNum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -63,6 +76,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1024, 741);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.seatNumText);
             this.Controls.Add(this.enter);
             this.Name = "SeatNum";
@@ -77,6 +91,7 @@
 
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.TextBox seatNumText;
+        private System.Windows.Forms.Button back;
     }
 }
 
