@@ -43,5 +43,11 @@ namespace AirplanPOS
             frm.Show();
             this.Visible = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Exit_pop_up frm = new Exit_pop_up();
+            frm.Show();
+        }
     }
 }

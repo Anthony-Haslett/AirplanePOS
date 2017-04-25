@@ -55,6 +55,12 @@
     <Compile Include="CustomerDetails.Designer.cs">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Exit pop up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exit pop up.Designer.cs">
+      <DependentUpon>Exit pop up.cs</DependentUpon>
+    </Compile>
     <Compile Include="Landing page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit pop up.resx">
+      <DependentUpon>Exit pop up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Landing page.resx">
       <DependentUpon>Landing page.cs</DependentUpon>
