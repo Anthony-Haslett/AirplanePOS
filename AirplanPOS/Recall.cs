@@ -26,9 +26,9 @@ namespace AirplanPOS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Recall_Complete frm = new Recall_Complete();
+            Confirm_Recall frm = new Confirm_Recall();
             frm.Show();
-            this.Visible = false;
+            //this.Hide();        
         }
     }
 }

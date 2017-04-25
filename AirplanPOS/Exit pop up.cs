@@ -38,14 +38,8 @@ namespace AirplanPOS
 
         private void goBack_Click(object sender, EventArgs e)
         {
-            
-            SeatNum frm = new SeatNum();
-            if (frm != null)
-            {
-                frm.Show();
-                this.Visible = false;
-            }
-            
+
+            this.Hide();
         }
     }
 }

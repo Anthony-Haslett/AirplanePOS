@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Confirm Recall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm Recall.Designer.cs">
+      <DependentUpon>Confirm Recall.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="SelectFood.Designer.cs">
       <DependentUpon>SelectFood.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Confirm Recall.resx">
+      <DependentUpon>Confirm Recall.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </EmbeddedResource>

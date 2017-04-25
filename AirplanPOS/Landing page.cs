@@ -61,16 +61,8 @@ namespace AirplanPOS
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (System.Windows.Forms.Application.MessageLoop)
-            {
-                // WinForms app
-                System.Windows.Forms.Application.Exit();
-            }
-            else
-            {
-                // Console app
-                System.Environment.Exit(1);
-            }
+            Exit_pop_up frm = new Exit_pop_up();
+            frm.Show();            
         }
     }
     }
