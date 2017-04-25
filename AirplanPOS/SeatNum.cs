@@ -37,7 +37,11 @@ namespace AirplanPOS
             this.Visible = false;
         }
 
-      
-       
+        private void back_Click(object sender, EventArgs e)
+        {
+            Landing_page frm = new Landing_page();
+            frm.Show();
+            this.Visible = false;
+        }
     }
 }
