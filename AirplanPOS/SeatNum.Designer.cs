@@ -93,6 +93,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.seatNumText);
             this.Controls.Add(this.enter);
+            this.DoubleBuffered = true;
             this.Name = "SeatNum";
             this.Text = "Enter Seat Number";
             this.Load += new System.EventHandler(this.SeatNum_Load);

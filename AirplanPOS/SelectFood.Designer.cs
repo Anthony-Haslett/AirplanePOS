@@ -37,7 +37,7 @@
             // 
             this.enter.BackColor = System.Drawing.Color.Transparent;
             this.enter.FlatAppearance.BorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.enter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.enter.ForeColor = System.Drawing.Color.Transparent;
             this.enter.Location = new System.Drawing.Point(880, 680);
             this.enter.Name = "enter";
