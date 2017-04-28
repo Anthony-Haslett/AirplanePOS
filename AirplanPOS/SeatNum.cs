@@ -12,6 +12,8 @@ namespace AirplanPOS
 {
     public partial class SeatNum : Form
     {
+        Review review = new Review();
+        public static string passingText;
         public SeatNum()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace AirplanPOS
         {
             //Review frmR = new Review(RichTextBox.Text);
             //frmR.reviewText.Text += "gggg";
-
+            review.reviewText.Text = "Set from form1";
             CustomerDetails frm = new CustomerDetails();
             frm.Show();
             this.Visible = false;
@@ -48,6 +50,11 @@ namespace AirplanPOS
         {
             Exit_pop_up frm = new Exit_pop_up();
             frm.Show();
+        }
+
+        private void seatNumText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

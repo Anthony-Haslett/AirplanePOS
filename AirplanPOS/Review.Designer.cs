@@ -43,6 +43,7 @@
             this.reviewText.Size = new System.Drawing.Size(560, 400);
             this.reviewText.TabIndex = 0;
             this.reviewText.Text = "";
+            this.reviewText.TextChanged += new System.EventHandler(this.reviewText_TextChanged);
             // 
             // back
             // 

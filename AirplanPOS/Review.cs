@@ -12,6 +12,7 @@ namespace AirplanPOS
 {
     public partial class Review : Form
     {
+        public SeatNum sn;
         public Review()
         {
             InitializeComponent();
@@ -33,6 +34,11 @@ namespace AirplanPOS
         }
 
         private void Review_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reviewText_TextChanged(object sender, EventArgs e)
         {
 
         }
