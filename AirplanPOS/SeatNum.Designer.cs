@@ -57,7 +57,6 @@
             this.seatNumText.Name = "seatNumText";
             this.seatNumText.Size = new System.Drawing.Size(368, 43);
             this.seatNumText.TabIndex = 2;
-            this.seatNumText.Text = "Enter here";
             this.seatNumText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.seatNumText.TextChanged += new System.EventHandler(this.seatNumText_TextChanged);
             // 

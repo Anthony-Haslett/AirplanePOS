@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerDetails));
             this.enter = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.seatNumText = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.sexBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // enter
@@ -57,6 +60,39 @@
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // seatNumText
+            // 
+            this.seatNumText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.seatNumText.Font = new System.Drawing.Font("Segoe MDL2 Assets", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatNumText.Location = new System.Drawing.Point(339, 260);
+            this.seatNumText.Name = "seatNumText";
+            this.seatNumText.Size = new System.Drawing.Size(337, 35);
+            this.seatNumText.TabIndex = 4;
+            this.seatNumText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(339, 361);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(337, 35);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // sexBox
+            // 
+            this.sexBox.BackColor = System.Drawing.SystemColors.Window;
+            this.sexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sexBox.FormattingEnabled = true;
+            this.sexBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.sexBox.Location = new System.Drawing.Point(339, 457);
+            this.sexBox.Name = "sexBox";
+            this.sexBox.Size = new System.Drawing.Size(337, 45);
+            this.sexBox.TabIndex = 6;
+            // 
             // CustomerDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -64,12 +100,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1019, 741);
+            this.Controls.Add(this.sexBox);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.seatNumText);
             this.Controls.Add(this.back);
             this.Controls.Add(this.enter);
             this.Name = "CustomerDetails";
             this.Text = "CustomerDetails";
             this.Load += new System.EventHandler(this.CustomerDetails_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,5 +117,8 @@
 
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.TextBox seatNumText;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox sexBox;
     }
 }

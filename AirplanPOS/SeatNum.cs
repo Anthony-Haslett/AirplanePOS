@@ -33,10 +33,17 @@ namespace AirplanPOS
         {
             //Review frmR = new Review(RichTextBox.Text);
             //frmR.reviewText.Text += "gggg";
-            review.reviewText.Text = "Set from form1";
-            CustomerDetails frm = new CustomerDetails();
-            frm.Show();
-            this.Visible = false;
+            //review.reviewText.Text = "Set from form1";
+            if (seatNumText == null)
+            {
+                System.Windows.Forms.MessageBox.Show("Please enter seat number!");
+            }
+            else
+            {
+                CustomerDetails frm = new CustomerDetails();
+                frm.Show();
+                this.Visible = false;
+            }
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -54,7 +61,7 @@ namespace AirplanPOS
 
         private void seatNumText_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
