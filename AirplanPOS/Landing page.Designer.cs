@@ -82,11 +82,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.recall);
             this.Controls.Add(this.button3);
             this.Name = "Landing_page";
             this.Text = "Landing_page";
+            this.Load += new System.EventHandler(this.Landing_page_Load);
             this.ResumeLayout(false);
 
         }

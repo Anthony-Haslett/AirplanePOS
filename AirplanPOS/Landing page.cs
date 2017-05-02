@@ -64,6 +64,11 @@ namespace AirplanPOS
             Exit_pop_up frm = new Exit_pop_up();
             frm.Show();            
         }
+
+        private void Landing_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
