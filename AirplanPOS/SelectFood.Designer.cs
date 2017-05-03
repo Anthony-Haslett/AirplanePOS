@@ -65,6 +65,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ControlBox = false;
             this.Controls.Add(this.back);
             this.Controls.Add(this.enter);
             this.Name = "SelectFood";

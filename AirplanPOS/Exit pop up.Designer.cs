@@ -64,6 +64,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(436, 287);
+            this.ControlBox = false;
             this.Controls.Add(this.goBack);
             this.Controls.Add(this.exitBtn);
             this.DoubleBuffered = true;

@@ -100,6 +100,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1019, 741);
+            this.ControlBox = false;
             this.Controls.Add(this.sexBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.seatNumText);

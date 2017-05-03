@@ -67,6 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ControlBox = false;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Name = "OrderComplete";

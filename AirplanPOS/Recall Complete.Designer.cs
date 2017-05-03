@@ -63,6 +63,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1019, 741);
+            this.ControlBox = false;
             this.Controls.Add(this.exit);
             this.Controls.Add(this.back);
             this.Name = "Recall_Complete";
