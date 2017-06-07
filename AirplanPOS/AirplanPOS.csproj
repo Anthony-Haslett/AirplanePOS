@@ -61,6 +61,12 @@
     <Compile Include="CustomerDetails.Designer.cs">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrder.Designer.cs">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Exit pop up.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     </Compile>
     <Compile Include="Recall.Designer.cs">
       <DependentUpon>Recall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Review2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Review2.Designer.cs">
+      <DependentUpon>Review2.cs</DependentUpon>
     </Compile>
     <Compile Include="SeatNum.cs">
       <SubType>Form</SubType>
@@ -123,6 +135,9 @@
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Exit pop up.resx">
       <DependentUpon>Exit pop up.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +153,9 @@
     <EmbeddedResource Include="Recall.resx">
       <DependentUpon>Recall.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Review2.resx">
+      <DependentUpon>Review2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeatNum.resx">
       <DependentUpon>SeatNum.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +170,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Review.resx">
       <DependentUpon>Review.cs</DependentUpon>
@@ -171,6 +190,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changed order.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Review2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

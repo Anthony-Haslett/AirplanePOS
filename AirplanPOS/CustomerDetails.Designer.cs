@@ -34,6 +34,7 @@
             this.seatNumText = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.sexBox = new System.Windows.Forms.ComboBox();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // enter
@@ -63,26 +64,31 @@
             // seatNumText
             // 
             this.seatNumText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.seatNumText.Enabled = false;
             this.seatNumText.Font = new System.Drawing.Font("Segoe MDL2 Assets", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seatNumText.Location = new System.Drawing.Point(339, 260);
             this.seatNumText.Name = "seatNumText";
             this.seatNumText.Size = new System.Drawing.Size(337, 35);
             this.seatNumText.TabIndex = 4;
+            this.seatNumText.Text = "John";
             this.seatNumText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(339, 361);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(337, 35);
             this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Doe";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // sexBox
             // 
             this.sexBox.BackColor = System.Drawing.SystemColors.Window;
+            this.sexBox.Enabled = false;
             this.sexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sexBox.FormattingEnabled = true;
             this.sexBox.Items.AddRange(new object[] {
@@ -92,6 +98,20 @@
             this.sexBox.Name = "sexBox";
             this.sexBox.Size = new System.Drawing.Size(337, 45);
             this.sexBox.TabIndex = 6;
+            this.sexBox.Text = "Male";
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitBtn.BackgroundImage = global::AirplanPOS.Properties.Resources.exit;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.exitBtn.Location = new System.Drawing.Point(956, 12);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(52, 84);
+            this.exitBtn.TabIndex = 7;
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // CustomerDetails
             // 
@@ -101,6 +121,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1019, 741);
             this.ControlBox = false;
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.sexBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.seatNumText);
@@ -121,5 +142,6 @@
         private System.Windows.Forms.TextBox seatNumText;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox sexBox;
+        private System.Windows.Forms.Button exitBtn;
     }
 }

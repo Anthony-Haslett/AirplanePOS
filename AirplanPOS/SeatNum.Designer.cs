@@ -52,11 +52,13 @@
             // seatNumText
             // 
             this.seatNumText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.seatNumText.Enabled = false;
             this.seatNumText.Font = new System.Drawing.Font("Segoe MDL2 Assets", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seatNumText.Location = new System.Drawing.Point(328, 320);
             this.seatNumText.Name = "seatNumText";
             this.seatNumText.Size = new System.Drawing.Size(368, 43);
             this.seatNumText.TabIndex = 2;
+            this.seatNumText.Text = "456";
             this.seatNumText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.seatNumText.TextChanged += new System.EventHandler(this.seatNumText_TextChanged);
             // 

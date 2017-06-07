@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectFood));
             this.enter = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.burgerBox = new System.Windows.Forms.TextBox();
+            this.burgerBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // enter
@@ -58,6 +60,29 @@
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click_1);
             // 
+            // burgerBox
+            // 
+            this.burgerBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.burgerBox.Enabled = false;
+            this.burgerBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.burgerBox.Location = new System.Drawing.Point(67, 181);
+            this.burgerBox.Multiline = true;
+            this.burgerBox.Name = "burgerBox";
+            this.burgerBox.Size = new System.Drawing.Size(247, 100);
+            this.burgerBox.TabIndex = 6;
+            this.burgerBox.Text = "A deluxe gourmet burger, with all the trimmings";
+            // 
+            // burgerBtn
+            // 
+            this.burgerBtn.BackColor = System.Drawing.Color.Transparent;
+            this.burgerBtn.BackgroundImage = global::AirplanPOS.Properties.Resources.burger1;
+            this.burgerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.burgerBtn.Location = new System.Drawing.Point(67, 319);
+            this.burgerBtn.Name = "burgerBtn";
+            this.burgerBtn.Size = new System.Drawing.Size(247, 254);
+            this.burgerBtn.TabIndex = 7;
+            this.burgerBtn.UseVisualStyleBackColor = false;
+            // 
             // SelectFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -66,11 +91,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.ControlBox = false;
+            this.Controls.Add(this.burgerBox);
             this.Controls.Add(this.back);
             this.Controls.Add(this.enter);
+            this.Controls.Add(this.burgerBtn);
             this.Name = "SelectFood";
             this.Text = "SelectFood";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -78,5 +106,7 @@
 
         private System.Windows.Forms.Button enter;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.TextBox burgerBox;
+        private System.Windows.Forms.Button burgerBtn;
     }
 }

@@ -10,30 +10,25 @@ using System.Windows.Forms;
 
 namespace AirplanPOS
 {
-    public partial class Recall : Form
+    public partial class Review2 : Form
     {
-        public Recall()
+        public Review2()
         {
             InitializeComponent();
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Landing_page frm = new Landing_page();
+            Payment frm = new Payment();
             frm.Show();
             this.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Confirm_Recall frm = new Confirm_Recall();
+            SelectFood frm = new SelectFood();
             frm.Show();
-            //this.Hide();        
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Visible = false;
         }
     }
 }

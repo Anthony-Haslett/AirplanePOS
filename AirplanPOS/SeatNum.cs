@@ -34,6 +34,9 @@ namespace AirplanPOS
             //Review frmR = new Review(RichTextBox.Text);
             //frmR.reviewText.Text += "gggg";
             //review.reviewText.Text = "Set from form1";
+
+
+
             if (seatNumText == null)
             {
                 System.Windows.Forms.MessageBox.Show("Please enter seat number!");

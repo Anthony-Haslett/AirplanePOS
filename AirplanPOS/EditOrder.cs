@@ -10,36 +10,32 @@ using System.Windows.Forms;
 
 namespace AirplanPOS
 {
-    public partial class CustomerDetails : Form
+    public partial class EditOrder : Form
     {
-        public CustomerDetails()
+        public EditOrder()
         {
             InitializeComponent();
         }
 
-        private void CustomerDetails_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void enter_Click(object sender, EventArgs e)
-        {
-            SelectFood frm = new SelectFood();
-            frm.Show();
-            this.Visible = false;
-    }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            SeatNum frm = new SeatNum();
+            EditOrder frm = new EditOrder();
             frm.Show();
             this.Visible = false;
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            Exit_pop_up frm = new Exit_pop_up();
+            Review2 frm = new Review2();
             frm.Show();
+            this.Visible = false;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Review frm = new Review();
+            frm.Show();
+            this.Visible = false;
         }
     }
 }
