@@ -45,7 +45,15 @@ namespace AirplanPOS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            EditOrder frm = new EditOrder();
+            frm.Show();
+            this.Visible = false;
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Exit_pop_up frm = new Exit_pop_up();
+            frm.Show();
         }
     }
 }

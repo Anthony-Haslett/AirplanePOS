@@ -33,6 +33,7 @@
             this.back = new System.Windows.Forms.Button();
             this.burgerBox = new System.Windows.Forms.TextBox();
             this.burgerBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // enter
@@ -75,13 +76,26 @@
             // burgerBtn
             // 
             this.burgerBtn.BackColor = System.Drawing.Color.Transparent;
-            this.burgerBtn.BackgroundImage = global::AirplanPOS.Properties.Resources.burger1;
+            this.burgerBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("burgerBtn.BackgroundImage")));
             this.burgerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.burgerBtn.Location = new System.Drawing.Point(67, 319);
             this.burgerBtn.Name = "burgerBtn";
             this.burgerBtn.Size = new System.Drawing.Size(247, 254);
             this.burgerBtn.TabIndex = 7;
             this.burgerBtn.UseVisualStyleBackColor = false;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exitBtn.BackgroundImage")));
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.exitBtn.Location = new System.Drawing.Point(948, 12);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(52, 84);
+            this.exitBtn.TabIndex = 8;
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // SelectFood
             // 
@@ -91,6 +105,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.ControlBox = false;
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.burgerBox);
             this.Controls.Add(this.back);
             this.Controls.Add(this.enter);
@@ -108,5 +123,6 @@
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.TextBox burgerBox;
         private System.Windows.Forms.Button burgerBtn;
+        private System.Windows.Forms.Button exitBtn;
     }
 }

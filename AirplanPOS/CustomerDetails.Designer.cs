@@ -103,7 +103,7 @@
             // exitBtn
             // 
             this.exitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.exitBtn.BackgroundImage = global::AirplanPOS.Properties.Resources.exit;
+            this.exitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exitBtn.BackgroundImage")));
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.exitBtn.ForeColor = System.Drawing.Color.Transparent;
             this.exitBtn.Location = new System.Drawing.Point(956, 12);
