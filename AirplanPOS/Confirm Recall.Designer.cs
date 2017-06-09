@@ -69,6 +69,7 @@
             this.Controls.Add(this.goBack);
             this.DoubleBuffered = true;
             this.Name = "Confirm_Recall";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirm_Recall";
             this.ResumeLayout(false);
 
